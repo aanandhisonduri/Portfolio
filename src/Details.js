@@ -1,9 +1,9 @@
 // Enter all your detials in this file
 // Logo images
 import logogradient from "./assets/logo.svg";
-import logo from "./assets/logo2.svg";
+import logo from "./assets/portfolio.png";
 // Profile Image
-import Aanandhi from "./assets/Aanandhi.png";
+import Aanandhi from "./assets/Aanandhi.jpeg";
 // Tech stack images
 import html from "./assets/icons/html.png";
 import css from "./assets/icons/css.png";
@@ -48,7 +48,14 @@ export const logos = {
 export const personalDetails = {
   name: "Aanandhi Sonduri Panthangi",
   img: Aanandhi,
-  about: `I'm a Computer Science graduate student at USC, passionate about tech innovation and currently seeking job opportunities. With expertise in programming, machine learning, and web development, I'm eager to solve complex problems and enhance user experiences.`,
+  about: `
+  
+  Hi, I’m a graduate student in Computer Science at USC, set to graduate in May 2025, and I’m passionate about technology and innovation. As I navigate through my Master's journey, I’m diving deep into full-stack development and software engineering, eager to apply my skills in the professional world.
+
+I thrive on transforming complex problems into user-friendly applications and systems, driven by a solid foundation in programming, machine learning, and web development. I’m particularly excited about roles that challenge me and allow me to contribute to cutting-edge projects.
+
+Currently, I’m actively seeking entry-level opportunities where I can grow, learn, and make a tangible impact. Let’s connect and explore how I can bring value to your team!
+`,
 };
 
 // Enter your Social Media URLs here
@@ -157,7 +164,6 @@ export const projectDetails = [
     description: `Developed a dynamic stock search application for both web and mobile platforms. Using React.js for the web frontend and Node.js for the backend, I ensured a responsive, interactive interface and robust data processing. MongoDB enabled efficient, synchronized data storage across platforms. The iOS app, built with SwiftUI, provided a seamless user experience with real-time stock data integration via Finhub API and Polygon API. Hosting on Google Cloud Platform (GCP) optimized performance and load times, while responsive web design (RWD) ensured a consistent experience across all devices.`,
     techstack: "React, JavaScript, NodeJs, MongoDB, GCP, RWD",
     previewLink: "https://stock-search-app-fe.uw.r.appspot.com/search/home",
-    githubLink: "https://github.com",
   },
   {
     title: "Real-Time Color Detection Algorithm: Precision in RGB Identification with Python",
@@ -165,23 +171,21 @@ export const projectDetails = [
     description: `I engineered a real-time color detection algorithm in Python, integrating advanced computer vision techniques to accurately identify a diverse range of colors, including vital RGB variations such as red, green, and blue. Achieving an outstanding average accuracy of 95%, this project showcases my expertise in leveraging Python's robust libraries like NumPy and Pandas alongside sophisticated NLP and Markov Chain methodologies. By delivering a solution that balances precision with computational efficiency, I demonstrated not only my technical proficiency but also my capability to innovate and solve complex challenges in computer vision."`,
     techstack: "Python, OpenCV, NumPy, Pandas",
     previewLink: "https://google.com",
-    githubLink: "https://github.com",
+    githubLink: "https://github.com/Aanandhi-sonduri/Color-Detection-Project-Using-Open-Cv",
   },
   {
     title: "Song Lyrics Generator using Markov Chains",
     image: projectImage3,
     description: `I created an 85% accurate predictive text model using Markov Chains for generating song lyrics. This project utilized Python's NLP capabilities to analyze and predict song lyrics based on existing data. By leveraging advanced techniques in machine learning, I demonstrated both technical proficiency in Python and creative application of AI algorithms in artistic contexts.`,
     techstack: "Python, NLP, Markov Chain, NumPy, Pandas",
-    previewLink: "https://google.com",
-    githubLink: "https://github.com",
+    githubLink: "https://github.com/Aanandhi-sonduri/Text-Generation-Using-Markovs-Chain",
   },
   {
     title: "Cryptocurrency Price Prediction Using ARIMA",
     image: projectImage4,
     description: `As a Research Intern, I developed a machine learning model leveraging cryptocurrency and blockchain data to predict daily cryptocurrency prices. By analyzing historical data, I enhanced the model's accuracy, achieving a significant 20% improvement over previous approaches. Using Python, I implemented advanced techniques including Time Series Analysis and Feature Engineering, resulting in an impressive 90% accuracy rate. This project not only deepened my understanding of machine learning in financial markets but also culminated in a research paper documenting my findings.`,
     techstack: "Python, ARIMA, Machine Learning, Time Series Analyis, Feature EaQ2ngineering",
-    previewLink: "https://google.com",
-    githubLink: "https://github.com",
+    githubLink: "https://github.com/Aanandhi-sonduri/Cryptocurrency-Price-Prediction-ARIMA",
   },
   
 ];

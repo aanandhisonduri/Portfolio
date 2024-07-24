@@ -7,7 +7,9 @@ function Home() {
   const h11 = useRef();
   const h12 = useRef();
   const h13 = useRef();
+  const textRef = useRef(); // Reference for the new text
   const myimageref = useRef();
+
   useEffect(() => {
     const tl = gsap.timeline();
     tl.from(
@@ -44,6 +46,17 @@ function Home() {
         "<"
       )
       .from(
+        textRef.current, // Add animation for the new text
+        {
+          x: "-100%",
+          delay: 0.5,
+          opacity: 0,
+          duration: 2,
+          ease: "Power3.easeOut",
+        },
+        "<"
+      )
+      .from(
         myimageref.current,
         {
           x: "200%",
@@ -59,27 +72,40 @@ function Home() {
   return (
     <main className="container mx-auto max-width section md:flex justify-between items-center">
       <div>
-        <h1
+        <h4
           ref={h11}
-          className="text-2xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold"
+          className="text-lg text-dark-heading dark:text-light-heading md:text-xl xl:text-2xl xl:leading-tight font-bold"
         >
-          Hi,👋<br></br>My Name is<br></br>
-        </h1>
-        <h1
+          Hi,👋<br />My Name is<br />
+        </h4>
+        <h4
           ref={h12}
-          className="text-2xl bg-clip-text bg-gradient text-transparent md:text-4xl xl:text-5xl xl:leading-tight font-bold"
+          className="text-lg bg-clip-text bg-gradient text-transparent md:text-xl xl:text-2xl xl:leading-tight font-bold"
         >
           {name}
-        </h1>
-        <h2
+        </h4>
+        <h4
           ref={h13}
-          className="text-2xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold"
+          className="text-lg text-dark-heading dark:text-light-heading md:text-xl xl:text-2xl xl:leading-tight font-bold"
         >
           {tagline}
-        </h2>
+        </h4>
+        <h1
+          ref={textRef} // Attach the reference here
+          className="text-sm md:text-base xl:text-lg mt-4"
+        >
+          I’m glad you’re here. Explore my projects and see how I tackle tech challenges with passion and expertise. From my work experience to the skills I've honed, everything is here to showcase the innovative solutions I’m excited about.
+          <br /><br />
+          If you’re interested in discussing tech, exploring opportunities, or just connecting, don’t hesitate to reach out.
+        </h1>
       </div>
       <div className="mt-5 md:mt-0">
-        <img ref={myimageref} className="w-1/2 md:ml-auto" src={img} alt="Pavan MG" />
+        <img
+          ref={myimageref}
+          className="w-2/3 md:w-1/2 md:ml-auto"
+          src={img}
+          alt="Aanandhi"
+        />
       </div>
     </main>
   );

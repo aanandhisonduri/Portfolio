@@ -28,7 +28,7 @@ import projectImage1 from "./assets/projects/project1.jpg";
 import projectImage2 from "./assets/projects/project2.png";
 import projectImage3 from "./assets/projects/project3.png";
 import projectImage4 from "./assets/projects/project4.png";
-import projectImage5 from "./assets/projects/project5.jpg";
+import projectImage5 from "./assets/projects/project5.png";
 import projectImage6 from "./assets/projects/project6.jpg";
 //Education Images
 import srm from "./assets/icons/srm.png";
@@ -63,7 +63,7 @@ export const socialMediaUrl = {
   linkdein: "https://www.linkedin.com/in/aanandhi-sonduri-a814a31a4/",
   github: "https://github.com/Aanandhi-sonduri",
   twitter: "https://twitter.com/",
-  resume: "https://drive.google.com/file/d/1lhgmNC05AWvUdTimDUp_SQm3iC5Km_zv/view?usp=sharing",
+  resume: "https://drive.google.com/file/d/1wmAnNg8afWWXMKF53ZmA2z8iJZVqnAru/view?usp=sharing",
 
 };
 
@@ -159,11 +159,18 @@ export const techStackDetails = {
 // Enter your Project Details here
 export const projectDetails = [
   {
+    title: "ExploreEase – AI Travel Planner",
+    image: projectImage5,
+    description: `ExploreEase is an intelligent travel assistant designed to simplify trip planning through real-time conversational AI. Built with Next.js and GROQ API, it enables users to craft personalized itineraries effortlessly. By integrating Clerk, ExploreEase ensures a secure and seamless authentication experience, allowing users to log in and manage their sessions with ease. The chatbot is fine-tuned with a structured system prompt, ensuring it delivers accurate and relevant travel recommendations.`,
+    techstack: "React, Next.js, GROQ API, Clerk, JavaScript, Vercel",
+    previewLink: "https://explore-ease-psi.vercel.app/",
+    githubLink: "https://github.com/Aanandhi-sonduri/ExploreEase",
+  },
+  {
     title: "Dynamic Stock Search Application",
     image: projectImage1,
     description: `Developed a dynamic stock search application for both web and mobile platforms. Using React.js for the web frontend and Node.js for the backend, I ensured a responsive, interactive interface and robust data processing. MongoDB enabled efficient, synchronized data storage across platforms. The iOS app, built with SwiftUI, provided a seamless user experience with real-time stock data integration via Finhub API and Polygon API. Hosting on Google Cloud Platform (GCP) optimized performance and load times, while responsive web design (RWD) ensured a consistent experience across all devices.`,
     techstack: "React, JavaScript, NodeJs, MongoDB, GCP, RWD",
-    previewLink: "https://stock-search-app-fe.uw.r.appspot.com/search/home",
   },
   {
     title: "Real-Time Color Detection Algorithm: Precision in RGB Identification with Python",
@@ -187,6 +194,7 @@ export const projectDetails = [
     techstack: "Python, ARIMA, Machine Learning, Time Series Analyis, Feature EaQ2ngineering",
     githubLink: "https://github.com/Aanandhi-sonduri/Cryptocurrency-Price-Prediction-ARIMA",
   },
+  
   
 ];
 

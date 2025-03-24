@@ -63,7 +63,7 @@ export const socialMediaUrl = {
   linkdein: "https://www.linkedin.com/in/aanandhi-sonduri-a814a31a4/",
   github: "https://github.com/Aanandhi-sonduri",
   twitter: "https://twitter.com/",
-  resume: "https://drive.google.com/file/d/1f0OF7tciv-mNba8J__346XXKakShGUGg/view?usp=sharing",
+  resume: "https://drive.google.com/file/d/1lhgmNC05AWvUdTimDUp_SQm3iC5Km_zv/view?usp=sharing",
 
 };
 
